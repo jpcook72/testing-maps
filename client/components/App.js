@@ -1,9 +1,14 @@
 import React from "react"
-//import any sub-components
+import {printMsg} from "pg-auto-write"
 
 export default class App extends React.Component {
-	//constructor to initialize state
-	//any lifecycle methods
-	//any custom methods
-	//render
+
+    componentDidMount() {
+        printMsg()
+    }
+
+	render() {
+		return(<div>hey...</div>)
+	}
 }
+
